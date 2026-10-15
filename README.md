@@ -1,5 +1,7 @@
 # EQS Tool v5
 
+See [CHANGELOG.md](CHANGELOG.md) for what changed from v3 and why.
+
 A command-line tool that processes **NICEIC electrical certificate PDFs**. It reads the
 certificate details, checks the property against a master property list, then renames the
 file and copies it to the right destination. Anything that doesn't check out is moved to a
