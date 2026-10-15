@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "process",
+      "command": "dotnet",
+      "args": ["build", "${workspaceFolder}/EQS_Tool.sln", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary"],
+      "problemMatcher": "$msCompile",
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "test",
+      "type": "process",
+      "command": "dotnet",
+      "args": ["test", "${workspaceFolder}/EQS_Tool.sln"],
+      "problemMatcher": "$msCompile",
+      "group": { "kind": "test", "isDefault": true }
+    },
+    {
+      "label": "publish (win-x64 single exe)",
+      "type": "process",
+      "command": "dotnet",
+      "args": ["publish", "${workspaceFolder}/EQS_Tool/EQS_Tool.csproj", "-c", "Release", "-r", "win-x64", "--self-contained", "false", "-p:PublishSingleFile=true", "-o", "${workspaceFolder}/publish"],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

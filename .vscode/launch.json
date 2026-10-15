@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run EQS_Tool",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/EQS_Tool/bin/Debug/net8.0/EQS_Tool.dll",
+      "cwd": "${workspaceFolder}/EQS_Tool/bin/Debug/net8.0",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}
