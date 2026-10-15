@@ -18,10 +18,10 @@
       "group": { "kind": "test", "isDefault": true }
     },
     {
-      "label": "publish (win-x64 single exe)",
+      "label": "publish (win-x64)",
       "type": "process",
       "command": "dotnet",
-      "args": ["publish", "${workspaceFolder}/EQS_Tool/EQS_Tool.csproj", "-c", "Release", "-r", "win-x64", "--self-contained", "false", "-p:PublishSingleFile=true", "-o", "${workspaceFolder}/publish"],
+      "args": ["publish", "${workspaceFolder}/EQS_Tool/EQS_Tool.csproj", "-c", "Release", "-r", "win-x64", "--self-contained", "false", "-o", "${workspaceFolder}/publish"],
       "problemMatcher": "$msCompile"
     }
   ]
